@@ -1,0 +1,17 @@
+{
+  "name": "adeo_test",
+  "version": "0.0.1",
+  "description": "Filter a list of Countries, People & Animals or count childrens of each elements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --silent",
+    "test:verbose": "jest --verbose",
+    "test:cov": "jest --silent --coverage"
+  },
+  "keywords": [],
+  "author": "Thomas Dominik",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
