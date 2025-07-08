@@ -20,13 +20,13 @@
  */
 function filter(data, pattern) {
     const updatedData = data.map((country) => {
-        const filteredPeople = country.people.map((people) => {
-            const filteredAnimals = people.animals.filter((animal) => animal.name.toLowerCase().includes(pattern.toLowerCase()));
+        const filteredPeople = country.people.map((person) => {
+            const filteredAnimals = person.animals.filter((animal) => animal.name.toLowerCase().includes(pattern.toLowerCase()));
             return {
-                name: people.name,
+                name: person.name,
                 animals: filteredAnimals
             };
-        }).filter((people) => people.animals.length > 0);
+        }).filter((person) => person.animals.length > 0);
 
         return {
             name: country.name,
