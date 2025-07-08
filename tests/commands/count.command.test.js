@@ -10,4 +10,10 @@ test('Should add the number of childrens for each elements if they\'re array', (
     expect(data[0].people[2].name).toBe('Philip Murray [7]');
     expect(data[0].people[3].name).toBe('Bobby Ristori [9]');
     expect(data[0].people[4].name).toBe('Louise Pinzauti [5]');
+});
+
+test('Should return an empty array if input is empty', () => {
+    const { count } = require('../../commands/count.command');
+    const data = count([]);
+    expect(data).toEqual([]);
 })

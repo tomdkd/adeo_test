@@ -36,7 +36,7 @@ function __parseOption(arg) {
     const [name, value] = arg.startsWith('--') ? arg.substring(2).split('=') : error(`"${arg}" is not an option`);
 
     if (name === 'filter' && (value === undefined || value === '')) {
-        error(`Value cannot be null or undefined for option "filter". Usage: node index.js --filter=py.`);
+        error(`Value cannot be null or undefined for option "filter". Usage: node app.js --filter=ry.`);
     }
 
     return { name, value };

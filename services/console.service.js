@@ -5,7 +5,7 @@
  */
 function error(message) {
     console.log(`\x1b[31m[ERROR]\x1b[37m ${message}`);
-    process.exit();
+    process.exit(1);
 }
 
 module.exports = {
